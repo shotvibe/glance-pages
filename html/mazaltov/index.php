@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-<html>
 <html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" > 
 	<head>
 		<title> </title>
@@ -19,6 +18,10 @@
 		
 	</head>
 	<body class="homepage">
+	
+		<div id="header-bar">
+			<a href="#" class="image"><img src="css/images/mazaltov.png" alt="" /></a>
+		</div>	
 	
 		<div id="main">
 		
@@ -56,15 +59,19 @@
 									<li><img src="css/images/icon3.png" alt="" /><span class="f3"> כל האורחים מתחברים<br />לאלבום ומצלמים תמונות! </span></li>
 								</ul>
 								
-								<p>
-									עם glance לא תצטרכו לחכות לצלם שיוריד את התמונ ות,<br />
+								<p>תמונות
+									עם glance לא תצטרכו לחכות לצלם שיוריד את התמונות,<br />
 									לתרץ לחברים שכבר מתים לראות את כל הרגעים הגדולים<br />
 									ואיך הם יצאו... ובעיקר לא תפספסו אף רגע חד פעמי!
 								</p>
 								
 								<div class="poptrox">
-									<a class="button">הרשמו עכשיו!</a>
+									<a class="button">להתקנת האפליקציה בחינם!</a>
 								</div>
+								
+								<div class="mobile-button">
+									<a class="button" href="#">להתקנת האפליקציה בחינם!</a>
+								</div>								
 																
 							</div>
 							
@@ -149,8 +156,8 @@
 					<header>
 						<h1><img src="css/images/logo-alt.png" alt="glance" /></h1>
 						<h2>
-							לקבלת פרטים נוספים<br />
-							השאירו פרטיכם ונחזור בהקדם:
+							לקבלת לינק להתקנת האפליקציה<br />
+							בחינם השאירו מספר טלפון
 						</h2>
 					</header>
 					
@@ -160,11 +167,11 @@
 						
 						<form method="post" action="#">
 											
-							<input type="text" id="fname" name="fname" class="text" placeholder="שם מלא" />
+							
 											
 							<input type="text" id="fphone" name="fphone" class="text" placeholder="טלפון" />
 											
-							<input type="text" id="femail" name="femail" class="text" placeholder="אי-מייל" />
+							
 				
 							<a class="button submit" href="#">שלח</a>
 											
