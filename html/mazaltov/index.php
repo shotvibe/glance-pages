@@ -105,7 +105,7 @@
 											
 							
 											
-							<input type="text" id="fphone" name="phone_number" class="text" placeholder="טלפון" />
+							<input dir="ltr" type="text" id="fphone" name="phone_number" class="text" placeholder="טלפון" />
 											
 							
 				
