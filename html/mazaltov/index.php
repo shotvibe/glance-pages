@@ -70,7 +70,7 @@
 								</div>
 								
 								<div class="mobile-button">
-									<a class="button" href="https://www.useglance.com/app/">להתקנת האפליקציה בחינם!</a>
+									<a class="button" href="https://www.useglance.com/app/?mazaltov">להתקנת האפליקציה בחינם!</a>
 								</div>								
 																
 							</div>
