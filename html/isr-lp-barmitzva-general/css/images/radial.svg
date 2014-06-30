@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<radialGradient cx="0.5" cy="0.5" r="0.5" spreadMethod="reflect" id="g">
+<stop stop-color="rgb(255, 255, 255)" offset="0" stop-opacity="0.35"/>
+<stop stop-color="rgb(255, 255, 255)" offset="1" stop-opacity="0.05"/>
+</radialGradient>
+<rect width="100%" height="100%" fill="url(#g)"/>
+</svg>
