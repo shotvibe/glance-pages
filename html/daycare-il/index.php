@@ -65,7 +65,7 @@
 								</div>
 								
 								<div class="mobile-button">
-									<a class="button" href="#">להתקנת האפליקציה!</a>
+									<a class="button" href="https://www.useglance.com/app/?daycare-il">להתקנת האפליקציה!</a>
 								</div>								
 																
 							</div>
