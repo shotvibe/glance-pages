@@ -83,70 +83,6 @@
 			
 			<div class="form">
 			
-				<script type="text/javascript">
-
-				$(document).ready(function() {
-
-					$(".submit").click(function() {
-					
-						//get input field values
-						
-						var user_name       = $('input[name=fname]').val();
-						var user_email      = $('input[name=femail]').val();
-						var user_phone      = $('input[name=fphone]').val();
-					   
-						var proceed = true;
-						
-						if(user_name==""){
-							$('input[name=fname]').focus();
-							proceed = false;
-						}
-						if(user_email==""){
-							$('input[name=femail]').focus();
-							proceed = false;
-						}
-						if(user_phone=="") {    
-							$('input[name=fphone]').focus();
-							proceed = false;
-						}
-
-						//everything looks good! proceed...
-						if(proceed)
-						{
-							//data to be sent to server
-							post_data = {'userName':user_name, 'userEmail':user_email, 'userPhone':user_phone};
-						   
-							//Ajax post data to server
-							$.post('email.php', post_data, function(response){  
-
-								//load json data from server and output message    
-								if(response.type == 'error')
-								{
-									output = '<div class="error">'+response.text+'</div>';
-								}else{
-							   
-									output = '<div class="success">'+response.text+'</div>';
-								   
-									//reset values in all input fields
-									$('#contact_form input').val('');
-								   
-								}
-							   
-								$("#result").hide().html(output).show();
-							}, 'json');
-						   
-						}
-					});
-				   
-					//reset previously set border colors and hide all message on .keyup()
-					$("#contact_form input, #contact_form textarea").keyup(function() {
-					 
-						$("#result").hide();
-					});
-				   
-				});
-				</script>		
-			
 					<div class="closer">X</div>
 		
 					<header>
@@ -161,15 +97,17 @@
 					
 						<div id="result"></div>		
 						
-						<form method="post" action="#">
+						<form method="post" action="https://www.useglance.com/affiliates/request_sms/">
 											
 							
 											
-							<input type="text" id="fphone" name="fphone" class="text" placeholder="טלפון" />
+							<input type="text" id="fphone" name="phone_number" class="text" placeholder="טלפון" />
 											
 							
 				
-							<a class="button submit" href="#">שלח</a>
+							<input type="hidden" name="partner" value="weddings-il">
+							<input type="hidden" name="default_country" value="IL">
+							<input type="submit" class="button submit" style="font-size:22px;padding:0" value="שלח">
 											
 						</form>
 						
